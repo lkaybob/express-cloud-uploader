@@ -33,8 +33,8 @@
 ><h2>4. (옵션) 사용되는 Github 오픈소스 SW 목록</h2>
 
 
->    aws-sdk(AWS 서비스를 사용하기 위한 JS SDK) https://github.com/aws/aws-sdk-js
-     formidable(HTTP Request의 multipart Payload 파싱 도와주는 라이브러리) https://github.com/felixge/node-formidable
+>    aws-sdk(AWS 서비스를 사용하기 위한 JS SDK) https://github.com/aws/aws-sdk-js <br>
+>    formidable(HTTP Request의 multipart Payload 파싱 도와주는 라이브러리) https://github.com/felixge/node-formidable
       
 
 
