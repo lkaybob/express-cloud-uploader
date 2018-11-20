@@ -1,0 +1,21 @@
+{
+  "name": "express-uploader",
+  "version": "0.1.0",
+  "description": "File upload middleware for express.js framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.ajou.ac.kr:open-source-SW-2018-fall/express-uploader.git"
+  },
+  "keywords": [
+    "google",
+    "dirve",
+    "s3",
+    "upload"
+  ],
+  "author": "",
+  "license": "Apache-2.0"
+}
