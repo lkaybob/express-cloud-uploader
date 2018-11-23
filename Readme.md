@@ -2,7 +2,13 @@
 
 # 클라우드 자동 업로드 미들웨어
 ##팀멤버
-[조은성](/Dev_ES), [계성혁](/lkaybob), [신희수](/heesu_shin), [이태경](/tph00300)
+이름 | 역할  
+---|---
+계성혁 (소프트웨어학과 13) | <img src="https://assets.pcmag.com/media/images/483051-microsoft-onedrive.png?width=333&height=245" style="height:20px;">   OneDrive 연동 
+조은성 (산업공학과 13) | <img src="https://qumulo.com/wp-content/uploads/2018/07/prod-art-aws-600.width-1200.png" style="height:30px"> AWS S3 연동 
+신희수 (소프트웨어학과 16) | <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Google_Drive_Logo.svg/555px-Google_Drive_Logo.svg.png" style="height:20px">   Google Drive 연동 
+이태경 (이태경 17) | <img src="https://image.flaticon.com/icons/png/512/306/306443.png" style="height:20px">    문서화 담당 
+
 
 ## 프로젝트 내용 (설명)
 ### 개요
