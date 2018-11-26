@@ -17,5 +17,11 @@
     "upload"
   ],
   "author": "",
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "dependencies": {
+    "aws-sdk": "^2.362.0",
+    "express": "^4.16.4",
+    "formidable": "^1.2.1",
+    "util": "^0.11.1"
+  }
 }
