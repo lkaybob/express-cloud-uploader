@@ -16,20 +16,28 @@
 본 패키지에서는 S3뿐만 아니라, Google Drive와 OneDrive에도 파일 업로드를 하여, 웹서비스 관리자가 쉽게 파일을 관리할 수 있도록 미들웨어를 제공한다.
 
 ### 부족한 기능 파악후, 기능 개선 목록
-웹서버와 S3를 같이 운영하다보면 이를 연동하는 것이 힘들다는 아이디어에서 착안해 Express.js 환경에서 formidable와 aws-sdk 패키지 / OneDrive REST API / Google Drive SDK를 래핑하여 업로드된 이미지를 S3/OneDrive/Google Drive에 자동으로 업로드하여 쉽게 활용할 수 있도록 함.
+웹서버와 S3를 같이 운영하다보면 이를 연동하는 것이 힘들다는 아이디어에서 착안해 Express.js 환경에서 formidable와 aws-sdk 패키지 / OneDrive REST API / Google Drive API를 래핑하여 업로드된 이미지를 S3/OneDrive/Google Drive에 자동으로 업로드하여 쉽게 활용할 수 있도록 함.
 
 ### 기대효과
 웹서버와 타 스토리지를 서비스를 함께 사용하고자 하는 타 개발자들이 연동을 하는데 필요한 부담을 덜어줄 수 있다.
 
-## 사용되는 Github 오픈소스 SW 목록
+## 사용되는 오픈소스 SW 목록
 * aws-sdk ([Github](https://github.com/aws/aws-sdk-js) / [NPM](https://www.npmjs.com/package/aws-sdk))
     * AWS 서비스를 사용하기 위한 JS SDK
+    * Installing
+* google-api-nodejs ([Github](https://github.com/googleapis/google-api-nodejs-client/tree/master/samples/drive) / [NPM](https://www.npmjs.com/package/googleapis))
+    * Google api를 이용하여 nodeJS api
+    * Client
+* OneDrive-Graph-api ([사용방법](https://www.evernote.com/l/AUDufYzQX7NOVJymel7-gw49_mkbKUWdy10))
+    * 사용법
 * formidable ([Github](https://github.com/felixge/node-formidable) /  [NPM](https://www.npmjs.com/package/formidable))
     * HTTP Request의 multipart Payload 파싱 도와주는 라이브러리
+* s3-sdk-nodejs ([생활코딩](https://opentutorials.org/course/2717/11797))
+    * Nodejs를 위한 s3-sdk 사용법
 
 ## Future To-Do List
+* [ ] aws-sdk, OneDrive REST API, Google Drive SDK를 S3연동 미들웨어 구축
 * [ ] NPM Registry 등록
 * [ ] Documentation 작성
-
 
 
