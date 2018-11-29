@@ -21,7 +21,7 @@
     * HTTP Request의 multipart Payload 파싱 도와주는 라이브러리
 
 ## 은성's 완료사항
-* [ ] formidable과 S3를 이용하여 브라우저를 통해 파일 업로드를 하면 s3로 업로드 할 수 있게 구현.(11/27)
+* [ ] formidable과 S3를 이용하여 브라우저를 통해 파일 업로드를 하면 s3로 업로드 할 수 있게 구현. (11/27)
 
 ## Future To-Do List
 * [ ] NPM Registry 등록
