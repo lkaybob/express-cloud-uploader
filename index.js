@@ -12,10 +12,10 @@ AWS.config.region = 'ap-northeast-2';
 
 app.get('/', function(req, res){
     var output = `
+        <h1> S3 File uploader</h1>
         <form action="/upload" enctype="multipart/form-data" method="post">
-            <input type="text" name="title"><br>
             <input type="file" name="upload" multiple="multiple"><br>
-            <input type="submit" value="Upload">
+            <input type="submit" value="파일 업로드">
         </form>`;
     res.send(output);
 });
@@ -43,11 +43,11 @@ app.post('/upload', function(req, res){
         });
     });
 
-    form.parse(req, function(err, fields, files){
-        res.writeHead(200, {'content-type': 'text/plain'});
-        res.write('received upload:\n\n');
-        res.end(util.inspect({fields: fields, files: files}));
-    });
+    // form.parse(req, function(err, fields, files){
+    //     res.writeHead(200, {'content-type': 'text/plain'});
+    //     res.write('received upload:\n\n');
+    //     res.end(util.inspect({fields: fields, files: files}));
+    // });
 
 
     
