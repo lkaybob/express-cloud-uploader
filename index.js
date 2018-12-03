@@ -10,6 +10,13 @@ var AWS = require('aws-sdk');
 AWS.config.region = 'ap-northeast-2';
 
 
+console.log('Uploading ' + process.argv[2] + ' to S3...');
+
+// process.argv.forEach(function(val, index, array){
+//     if (index == 2)
+//         console.log(val);
+// });
+
 app.get('/', function(req, res){
     var output = `
         <h1> S3 File uploader</h1>
@@ -30,6 +37,7 @@ app.post('/upload', function(req, res){
             ACL: 'public-read',
             Body: require('fs').createReadStream(files.upload.path)
         }
+        console.log("this is path: " + files.upload.path);
         s3.upload(params, function(err,data){
             var result = '';
             console.log(params.Key);
