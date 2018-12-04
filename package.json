@@ -26,6 +26,7 @@
     "express-session": "^1.15.6",
     "passport": "^0.4.0",
     "passport-azure-ad": "^4.0.0",
-    "simple-oauth2": "^2.2.1"
+    "simple-oauth2": "^2.2.1",
+    "axios": "^0.18.0"
   }
 }
