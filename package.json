@@ -1,5 +1,5 @@
 {
-  "name": "express-uploader",
+  "name": "express-cloud-uploader",
   "version": "0.1.0",
   "description": "File upload middleware for express.js framework",
   "main": "index.js",
