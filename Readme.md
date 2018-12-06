@@ -7,6 +7,10 @@
 신희수 (소프트웨어학과 16) | Google Drive 연동
 이태경 (이태경 17) | 문서화 담당
 
+![AWS](blob/MakeDocuments/images/awslogo.gif)
+![googledrive](blob/MakeDocuments/images/googledrivelogo2.png)
+![onedrive](blob/MakeDocuments/images/onedrive.png)
+
 ## 순서
 - [개발동기](#개발-동기)
 - [개발과정](#개발-과정)
