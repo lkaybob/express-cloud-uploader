@@ -5,7 +5,7 @@
 계성혁 (소프트웨어학과 13) | OneDrive 연동
 조은성 (산업공학과 13) | AWS S3 연동
 신희수 (소프트웨어학과 16) | Google Drive 연동
-이태경 (이태경 17) | 문서화 담당
+이태경 (소프트웨어학과 17) | 문서화 담당
 
 ![AWS](http://git.ajou.ac.kr/open-source-SW-2018-fall/express-uploader/tree/MakeDocuments/images/awslogo.gif)
 ![googledrive](http://git.ajou.ac.kr/open-source-SW-2018-fall/express-uploader/tree/MakeDocuments/images/googledrivelogo2.png)
