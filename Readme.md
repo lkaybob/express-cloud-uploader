@@ -35,6 +35,13 @@
 * s3-sdk-nodejs ([생활코딩](https://opentutorials.org/course/2717/11797))
     * Nodejs를 위한 s3-sdk 사용법
 
+## 서비스별 사용방법
+
+* [Google Drive 사용방법](/google-drive.md)
+* OneDrive 사용방법
+* AWS S3 사용법
+
+
 ## Future To-Do List
 * [ ] aws-sdk, OneDrive REST API, Google Drive SDK를 S3연동 미들웨어 구축
 * [ ] NPM Registry 등록
