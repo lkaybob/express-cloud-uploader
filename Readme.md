@@ -66,22 +66,12 @@ module.exports=api;
     * HTTP Request의 multipart Payload 파싱 도와주는 라이브러리
 * s3-sdk-nodejs ([생활코딩](https://opentutorials.org/course/2717/11797))
     * Nodejs를 위한 s3-sdk 사용법
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 9daa3e389815c6a2b1bb2536ddb7eed40f862c8c
 
 ## 서비스별 사용방법
 
 * [Google Drive 사용방법](blob/master/docs/google-drive.md)
-* OneDrive 사용방법
-* AWS S3 사용법
-<<<<<<< HEAD
-=======
-* Express 앱에서 사용하기 위한 미들웨어([Express](http://expressjs.com/ko/guide/writing-middleware.html))   
->>>>>>> MakeDocuments
-=======
->>>>>>> 9daa3e389815c6a2b1bb2536ddb7eed40f862c8c
+* [OneDrive 사용방법]()
+* [AWS S3 사용법]()
 
 
 ## Future To-Do List
