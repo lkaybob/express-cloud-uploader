@@ -20,16 +20,28 @@
 * formidable ([Github](https://github.com/felixge/node-formidable) /  [NPM](https://www.npmjs.com/package/formidable))
     * HTTP Request의 multipart Payload 파싱 도와주는 라이브러리
 
-{{구글 드라이브}}
-
+# 구글 드라이브
 ## Access Token 취득 방법
 
 OAuth2 사용하여 Access 토큰 취득
+링크 참조
 [Google Drive API](https://developers.google.com/identity/protocols/OAuth2)
 
 ## Access Token 파일 저장
 취득한 JSON 파일을 oauth2.keys으로 이름 변경
-프로젝트 내에 파일 추가
+프로젝트 루트에 파일 추가
+
+##코드 작동 과정
+유저가 지정한 파일을 formidable 사용하여
+파싱, 파싱된 파일을 로컬 서버에 넘겨주면
+파일 이름을 파라미터로 받아와
+라인 별로 커서 옮기며 드라이브에 업로드
+
+##진행 상황
+드라이브 업로드 -> 완료
+포미더블 파싱 -> 완료
+포미더블 파싱 결과를 파라미터로 받아와
+드라이브에 업로드 -> 진행 중
 
 
 ## Future To-Do List
