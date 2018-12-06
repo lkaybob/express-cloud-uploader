@@ -7,9 +7,9 @@
 신희수 (소프트웨어학과 16) | Google Drive 연동
 이태경 (이태경 17) | 문서화 담당
 
-![AWS](blob/MakeDocuments/images/awslogo.gif)
-![googledrive](blob/MakeDocuments/images/googledrivelogo2.png)
-![onedrive](blob/MakeDocuments/images/onedrive.png)
+![AWS](http://git.ajou.ac.kr/open-source-SW-2018-fall/express-uploader/tree/MakeDocuments/images/awslogo.gif)
+![googledrive](http://git.ajou.ac.kr/open-source-SW-2018-fall/express-uploader/tree/MakeDocuments/images/googledrivelogo2.png)
+![onedrive](http://git.ajou.ac.kr/open-source-SW-2018-fall/express-uploader/tree/MakeDocuments/images/onedrive.png)
 
 ## 순서
 - [개발동기](#개발-동기)
