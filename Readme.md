@@ -5,21 +5,49 @@
 계성혁 (소프트웨어학과 13) | OneDrive 연동
 조은성 (산업공학과 13) | AWS S3 연동
 신희수 (소프트웨어학과 16) | Google Drive 연동
-이태경 (이태경 17) | 문서화 담당 
+이태경 (이태경 17) | 문서화 담당
 
 ## 순서
-- [프로젝트개요]()
-- 프로젝트의 
-## 프로젝트 내용
-### 개요
-웹서비스가 올려받은 파일을 서버 인스턴스에서 관리하기에는 용량 관리 및 정합성 관리를 하기 어렵다. 이를 보완하기 위해서 AWS의 S3와 같은 스토리지 서비스에 파일 저장을 위임하기도 한다.
-본 패키지에서는 S3뿐만 아니라, Google Drive와 OneDrive에도 파일 업로드를 하여, 웹서비스 관리자가 쉽게 파일을 관리할 수 있도록 미들웨어를 제공한다.
+- [개발동기](개발 동기)
+- [개발과정](개발 과정)
+- []()
 
-### 부족한 기능 파악후, 기능 개선 목록
-웹서버와 S3를 같이 운영하다보면 이를 연동하는 것이 힘들다는 아이디어에서 착안해 Express.js 환경에서 formidable와 aws-sdk 패키지 / OneDrive REST API / Google Drive API를 래핑하여 업로드된 이미지를 S3/OneDrive/Google Drive에 자동으로 업로드하여 쉽게 활용할 수 있도록 함.
+## 개발 동기
+타 프로젝트를 진행하면서 node에서 코드 작성 시 로컬의 multipart 파일을 AWS에서 제공하는 S3 스토리지에 한번에 저장할 수 있는 모듈이 있으면 편리하겠다는 생각이 들었다.
+이에 기존에 존재하는 모듈을 사용하려고 하였으나 멀피파트 파일을 파싱해주는 모듈과 AWS에서 S3 스토리지에 저장하는 모듈이 분리되어 있었다.
+따라서 멀티파트 파일을 바로 S3 스토리지에 업로드할 수 있도록 두 가지 모듈을 하나로 합쳐 개발의 편리성을 증대하도록 하였다.
+본 패키지에서는 Aws를 사용하는 유저 뿐만 아니라 Google Drive와 OneDrive를 사용하는 유저를 위하여 자신이 사용하는 Cloud 웹서비스 관리자가 쉽게 파일을 관리할 수 있도록 미들웨어를 제공한다.
 
-### 기대효과
+## 개발 과정
+  1. multipart 파일을 파싱해주는 formidable 모듈과, S3 스토리지에 업로드 해주는 AWS-SDK 모듈 각각의 사용법을 숙지하였다.
+  2. 두 가지 모듈을 하나의 프로젝트에서 사용하여 바로 업로드할 수 있도록 하였다.
+  3. 완성 이후 S3 스토리지 뿐 아니라, 접근성이 높은 드라이브인 구글드라이브와 원드라이브에도 멀티파트 파일을 쉽게 업로드 할 수 있도록 개발 모듈을 확장하기로 하였다.
+
+## 기존 오픈소스 프로젝트에 비하여 개선된 사항
+1. 옵션 객체
+2. 개별 파악(랩핑 후, 하나로 만들었다.)
+
+## 기대효과
 웹서버와 타 스토리지를 서비스를 함께 사용하고자 하는 타 개발자들이 연동을 하는데 필요한 부담을 덜어줄 수 있다. 
+
+## formidable
+
+## Aws
+
+## Gooddrive
+
+## 미들웨어 사용법
+```js
+let api = require("express").Router();
+api.post("/", uploader({provider: "onedrive", path: ""}), (req, res) => {
+  res.sendStatus(200);
+});
+module.exports=api;
+```
+`uploader({provider: "onedrive", path: ""})` 
+- uploader : 미들웨어
+- provider : "update할 Cloud 서비스" 
+  ex) provider: "googledrive", provider: "aws"와 같이 설정
 
 ## 사용되는 오픈소스 SW 목록
 * aws-sdk ([Github](https://github.com/aws/aws-sdk-js) / [NPM](https://www.npmjs.com/package/aws-sdk))
