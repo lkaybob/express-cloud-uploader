@@ -53,6 +53,8 @@ module.exports=api;
 - provider : "update할 Cloud 서비스" 
   ex) provider: "googledrive", provider: "aws"와 같이 설정
 
+### [참고영상](https://1drv.ms/v/s!ArLP8iVDEywpgqd9ATwh7qlIybfRcA)
+
 ## 사용되는 오픈소스 SW 목록
 * aws-sdk ([Github](https://github.com/aws/aws-sdk-js) / [NPM](https://www.npmjs.com/package/aws-sdk))
     * AWS 서비스를 사용하기 위한 JS SDK
