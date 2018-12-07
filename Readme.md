@@ -1,4 +1,5 @@
 # 클라우드 자동 업로드 미들웨어
+`오픈소스8조`
 ## 팀멤버
 이름 | 역할
 ---|---
@@ -35,8 +36,13 @@
 
 ## 사용방법
 ### 서비스별 사용방법
+![googledrive](/images/googledrivelogo.gif)
 * [Google Drive 사용방법](/docs/google-drive.md)
+
+![onedrive](/images/onedrive.jpg)
 * [OneDrive 사용방법]()
+
+![AWS](/images/awslogo.gif)
 * [AWS S3 사용법](/docs/s3.md)
 
 
