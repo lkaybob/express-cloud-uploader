@@ -7,12 +7,6 @@
 신희수 (소프트웨어학과 16) | Google Drive 연동
 이태경 (소프트웨어학과 17) | 문서화 담당
 
-
-![AWS](/images/awslogo.gif){: width="100" height="100"}
-
-![googledrive](/images/googledrivelogo.gif)
-![onedrive](/images/onedrive.jpg)
-
 ## 순서
 - [개발동기](#개발-동기)
 - [개발과정](#개발-과정)
@@ -41,8 +35,13 @@
 
 ## 사용방법
 ### 서비스별 사용방법
+![googledrive](/images/googledrivelogo.gif)
 * [Google Drive 사용방법](/docs/google-drive.md)
+
+![onedrive](/images/onedrive.jpg)
 * [OneDrive 사용방법]()
+
+![AWS](/images/awslogo.gif)
 * [AWS S3 사용법](/docs/s3.md)
 
 
