@@ -1,12 +1,11 @@
 # Express-Cloud-Uploader
 
 ## NPM install
-```
-npm express-cloud-uploader
+```console
+foo@bar:~$ npm express-cloud-uploader
 ```
 ## What Is This?
 This package provides middleware for users who use the Cloud Web Service Manager to easily manage their files for users who use AWs, Google Drives, and OneDrive. If a user wants to upload any Content File to the user's Cloud Service, they can upload it at once by formatting it with a Json file and reducing the effort to upload it directly.
-본 패키지에서는 Aws, Google Drive, OneDrive를 사용하는 유저를 위하여 자신이 사용하는 Cloud 웹서비스 관리자가 쉽게 파일을 관리할 수 있도록 미들웨어를 제공해준다. 만약 사용자가 어떠한 Content File을 사용자의 사용 Cloud Service에 업로드하고 싶을 때, Json파일로 Formidable 하여 직접 업로드하는 수고를 줄여 한 번에 올릴 수 있다.
 
 ## How To Use It
 ### Usage By Service
