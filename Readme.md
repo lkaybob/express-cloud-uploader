@@ -17,8 +17,25 @@ This package provides middleware for users who use the Cloud Web Service Manager
 
 ### How to use middleware
 #### In the Frontend
+```html
+<form action="/" method="post" enctype="multipart/form-data">
+  <input type="Upload wanting file type" name="just name" value="some text">
+</form>
+```
+The pagkage's supporting upload file type is multipart/form-data. You may do the rest as you wish.
+패키지에서 지원하는 업로드 파일 타입은 multipart/form-data이다. 나머지 부분에 대해서는 사용자가 원하는 대로 하여도 좋다.
 #### In the Backend
-
+For example)
+```js
+let api = require("express").Router();
+api.post("/", uploader({provider: "onedrive", path: ""}), (req, res) => {
+});
+module.exports=api;
+```
+- uploader : middleware
+- provider : "Cloud Services to update"
+  ex) provider: Setup with "googledrive", provider: "aws"
+- path : where to upload
 
 
 ## credits
