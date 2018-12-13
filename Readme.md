@@ -1,11 +1,11 @@
 # Express-Cloud-Uploader
 
-## What is this?
+## What Is This?
 This package provides middleware for users who use the Cloud Web Service Manager to easily manage their files for users who use AWs, Google Drives, and OneDrive. If a user wants to upload any Content File to the user's Cloud Service, they can upload it at once by formatting it with a Json file and reducing the effort to upload it directly.
 본 패키지에서는 Aws, Google Drive, OneDrive를 사용하는 유저를 위하여 자신이 사용하는 Cloud 웹서비스 관리자가 쉽게 파일을 관리할 수 있도록 미들웨어를 제공해준다. 만약 사용자가 어떠한 Content File을 사용자의 사용 Cloud Service에 업로드하고 싶을 때, Json파일로 Formidable 하여 직접 업로드하는 수고를 줄여 한 번에 올릴 수 있다.
 
-## How to use it
-### Usage by service
+## How To Use It
+### Usage By Service
 ![googledrive](/images/googledrivelogo.gif)
 * [Google Drive usingway](/docs/google-drive.md)
 
@@ -15,8 +15,8 @@ This package provides middleware for users who use the Cloud Web Service Manager
 ![AWS](/images/awslogo.gif)
 * [AWS S3 usingway](/docs/s3.md)
 
-### How to use middleware
-#### In the Frontend
+### How To Use Middleware
+#### In The Frontend
 ```html
 <form action="/" method="post" enctype="multipart/form-data">
   <input type="Upload wanting file type" name="just name" value="some text">
@@ -24,7 +24,7 @@ This package provides middleware for users who use the Cloud Web Service Manager
 ```
 The pagkage's supporting upload file type is multipart/form-data. You may do the rest as you wish.
 패키지에서 지원하는 업로드 파일 타입은 multipart/form-data이다. 나머지 부분에 대해서는 사용자가 원하는 대로 하여도 좋다.
-#### In the Backend
+#### In The Backend
 For example)
 ```js
 let api = require("express").Router();
@@ -38,7 +38,7 @@ module.exports=api;
 - path : where to upload
 
 
-## credits
+## Credits
 * aws-sdk ([Github](https://github.com/aws/aws-sdk-js) / [NPM](https://www.npmjs.com/package/aws-sdk))
     * How to use Google-drive-api for Nodejs
 
