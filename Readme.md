@@ -1,4 +1,5 @@
 # 클라우드 자동 업로드 미들웨어
+`오픈소스8조`
 ## 팀멤버
 이름 | 역할
 ---|---
@@ -35,8 +36,13 @@
 
 ## 사용방법
 ### 서비스별 사용방법
+![googledrive](/images/googledrivelogo.gif)
 * [Google Drive 사용방법](/docs/google-drive.md)
+
+![onedrive](/images/onedrive.jpg)
 * [OneDrive 사용방법]()
+
+![AWS](/images/awslogo.gif)
 * [AWS S3 사용법](/docs/s3.md)
 
 
@@ -52,6 +58,8 @@ module.exports=api;
 - uploader : 미들웨어
 - provider : "update할 Cloud 서비스" 
   ex) provider: "googledrive", provider: "aws"와 같이 설정
+
+### [참고영상](https://1drv.ms/v/s!ArLP8iVDEywpgqd9ATwh7qlIybfRcA)
 
 ## 사용되는 오픈소스 SW 목록
 * aws-sdk ([Github](https://github.com/aws/aws-sdk-js) / [NPM](https://www.npmjs.com/package/aws-sdk))
