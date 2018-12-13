@@ -1,4 +1,4 @@
-module.exports = require('./lib');
+// module.exports = require('./lib');
 
 var http = require('http');
 var util = require('util');
@@ -7,7 +7,14 @@ var app = express();
 //var uploader = require("express-uploader");
 var formidable = require("formidable");
 var AWS = require('aws-sdk');
+var opn = require('opn');
 AWS.config.region = 'ap-northeast-2';
+
+var uploadWindow = function (req, res, next) {
+    opn("http://localhost:8080");
+};
+  
+uploadWindow();
 
 app.get('/', function(req, res){
     var output = `
@@ -29,7 +36,7 @@ app.post('/upload', function(req, res){
             ACL: 'public-read',
             Body: require('fs').createReadStream(files.upload.path)
         }
-        console.log("this is path: " + files.upload.path);
+
         s3.upload(params, function(err,data){
             var result = '';
             console.log(params.Key);
