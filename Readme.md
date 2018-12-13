@@ -27,7 +27,7 @@ This package provides middleware for users who use the Cloud Web Service Manager
 </form>
 ```
 The pagkage's supporting upload file type is multipart/form-data. You may do the rest as you wish.
-패키지에서 지원하는 업로드 파일 타입은 multipart/form-data이다. 나머지 부분에 대해서는 사용자가 원하는 대로 하여도 좋다.
+
 #### In The Backend
 For example)
 ```js
@@ -53,7 +53,7 @@ module.exports=api;
 * OneDrive-Graph-api ([Evernote](https://www.evernote.com/l/AUDufYzQX7NOVJymel7-gw49_mkbKUWdy10))
     * how to use onedrive
 
-* formidable ([Github](https://github.com/felixge/node-formidable) /  [NPM](https://www.npmjs.com/package/formidable)) / ([howtousefor]())
+* formidable ([Github](https://github.com/felixge/node-formidable) /  [NPM](https://www.npmjs.com/package/formidable))
     * Library to assist with multipart payload parsing of HTTP requests
 
 * s3-sdk-nodejs ([Opentutorials](https://opentutorials.org/course/2717/11797))
