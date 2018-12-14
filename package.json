@@ -28,6 +28,7 @@
     "express": "^4.16.4",
     "express-session": "^1.15.6",
     "formidable": "^1.2.1",
+    "googleapis": "^36.0.0",
     "opn": "^5.4.0",
     "passport": "^0.4.0",
     "passport-azure-ad": "^4.0.0",
