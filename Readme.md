@@ -36,10 +36,18 @@ api.post("/", uploader({provider: "onedrive", path: ""}), (req, res) => {
 });
 module.exports=api;
 ```
-- uploader : middleware
-- provider : "Cloud Services to update" <br>
-  ex) provider: Setup with "googledrive", provider: "aws"
-- path : where to upload
+#### S3
+`uploader({provider: "aws-s3", bucket: ""})` 
+- provider : "aws-s3" 
+- bucket: 사용자의 bucket 이름
+#### GoogleDrive
+* Get OAuth2 Key([developergoogle])(https://developers.google.com/identity/protocols/OAuth2)
+
+#### OneDrive
+* Get OAuth2 Key([docsMicrosoft](https://docs.microsoft.com/en-us/onedrive/developer/rest-api/getting-started/msa-oauth?view=odsp-graph-online))
+`uploader({provider: "onedrive", path: ""})` 
+- uploader : 미들웨어
+- provider : "update할 Cloud 서비스" 
 
 
 ## Credits
