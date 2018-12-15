@@ -18,7 +18,7 @@ This package provides middleware for users who use the Cloud Web Service Manager
 #### One Drive
 
 ![onedrive](/images/onedrive.jpg)
-* [OneDrive See Docs](/docs/onedrive-Ko.md)
+* [OneDrive See Docs](/docs/onedrive-en.md)
 
 #### AWS S3
 
@@ -47,7 +47,7 @@ module.exports=api;
     * How to use Google-drive-api for Nodejs
 
 * google-api-nodejs ([Github](https://github.com/googleapis/google-api-nodejs-client/tree/master/samples/drive) / [NPM](https://www.npmjs.com/package/googleapis))
-    * nodeJS api using Google api
+    * nodeJS api using Google api2
     * Client
 
 * OneDrive-Graph-api ([Evernote](https://www.evernote.com/l/AUDufYzQX7NOVJymel7-gw49_mkbKUWdy10))

@@ -3,7 +3,7 @@
 ## Access Token Acquire Method
 
 Access token must be acquired using OAuth2.
-Google Drive API [링크](https://developers.google.com/identity/protocols/OAuth2)
+Google Drive API [LINK](https://developers.google.com/identity/protocols/OAuth2)
 
 ## Access Token Saving File
 
