@@ -9,18 +9,23 @@ This package provides middleware for users who use the Cloud Web Service Manager
 
 ## How To Use It
 ### How to Use middleware
+
 #### Google Drive
+
 ![googledrive](/images/googledrivelogo.gif)
 * [Google Drive See Docs](/docs/google-drive.md)
+
 #### One Drive
+
 ![onedrive](/images/onedrive.jpg)
 * [OneDrive See Docs](/docs/onedrive-Ko.md)
-#### AWS S3
-![AWS](/images/awslogo.gif)
-* [AWS S3 usingway](/docs/s3.md)
 
-### How To Use Middleware
-#### In The Frontend
+#### AWS S3
+
+![AWS](/images/awslogo.gif)
+* [AWS S3 See Docs](/docs/s3.md)
+
+### In The Frontend
 ```html
 <form action="/" method="post" enctype="multipart/form-data">
   <input type="Upload wanting file type" name="just name" value="some text">
@@ -28,7 +33,7 @@ This package provides middleware for users who use the Cloud Web Service Manager
 ```
 Suppose you have a webpage like this, which uploads file to the server.
 
-#### In The Backend
+### In The Backend
 The pagkage's supporting upload file type is multipart/form-data. You may do the rest as you wish.<br>
 ```js
 let api = require("express").Router();
