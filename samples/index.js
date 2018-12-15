@@ -5,8 +5,8 @@ var uploader = require("../lib");
 
 app.server = http.createServer(app);
 
-app.post("/", uploader({provider: "onedrive", path: ""}), (req, res) => {
-  res.sendStatus(200);
+app.post('/', uploader({provider: "aws-s3", bucket: "osswtest"}), (req, res)=>{
+    res.sendStatus(200);
 });
 
 app.server.listen(8080);

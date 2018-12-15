@@ -1,6 +1,6 @@
 {
   "name": "express-cloud-uploader",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "File upload middleware for express.js framework",
   "main": "index.js",
   "scripts": {
@@ -16,20 +16,27 @@
     "s3",
     "upload"
   ],
-  "author": "",
+  "author": "ajou-oss-2018-2-team-8",
   "license": "Apache-2.0",
   "dependencies": {
     "@microsoft/microsoft-graph-client": "^1.3.0",
+    "async": "^2.6.1",
+    "aws-sdk": "^2.362.0",
     "axios": "^0.18.0",
     "cookie-parser": "^1.4.3",
     "dotenv": "^6.1.0",
     "express": "^4.16.4",
     "express-session": "^1.15.6",
     "formidable": "^1.2.1",
+    "googleapis": "^36.0.0",
+    "opn": "^5.4.0",
     "passport": "^0.4.0",
     "passport-azure-ad": "^4.0.0",
-    "simple-oauth2": "^2.2.1",
-    "async": "^2.6.1",
-    "aws-sdk": "^2.362.0"
-  }
+    "simple-oauth2": "^2.2.1"
+  },
+  "directories": {
+    "doc": "docs",
+    "lib": "lib"
+  },
+  "devDependencies": {}
 }
