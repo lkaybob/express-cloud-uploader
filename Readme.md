@@ -47,7 +47,7 @@ module.exports=api;
     * How to use Google-drive-api for Nodejs
 
 * google-api-nodejs ([Github](https://github.com/googleapis/google-api-nodejs-client/tree/master/samples/drive) / [NPM](https://www.npmjs.com/package/googleapis))
-    * nodeJS api using Google api
+    * nodeJS api using Google api2
     * Client
 
 * OneDrive-Graph-api ([Evernote](https://www.evernote.com/l/AUDufYzQX7NOVJymel7-gw49_mkbKUWdy10))
