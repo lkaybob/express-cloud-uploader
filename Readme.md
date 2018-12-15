@@ -8,13 +8,13 @@ foo@bar:~$ npm install express-cloud-uploader
 This package provides middleware for users who use the Cloud Web Service Manager to easily manage their files for users who use AWs, Google Drives, and OneDrive. If a user wants to upload any Content File to the user's Cloud Service, they can upload it at once by formatting it with a Json file and reducing the effort to upload it directly. Our project is middleware for the Express.js module.
 
 ## How To Use It
-### Usage By Service
+### How to Use middleware
 #### Google Drive
 ![googledrive](/images/googledrivelogo.gif)
 * [Google Drive See Docs](/docs/google-drive.md)
 #### One Drive
 ![onedrive](/images/onedrive.jpg)
-* [OneDrive See Docs](/docs/onedrive.md)
+* [OneDrive See Docs](/docs/onedrive-Ko.md)
 #### AWS S3
 ![AWS](/images/awslogo.gif)
 * [AWS S3 usingway](/docs/s3.md)
@@ -36,19 +36,6 @@ api.post("/", uploader({provider: "onedrive", path: ""}), (req, res) => {
 });
 module.exports=api;
 ```
-#### S3
-`uploader({provider: "aws-s3", bucket: ""})` 
-- provider : "aws-s3" 
-- bucket: 사용자의 bucket 이름
-#### GoogleDrive
-* Get OAuth2 Key([developergoogle])(https://developers.google.com/identity/protocols/OAuth2)
-
-#### OneDrive
-* Get OAuth2 Key([docsMicrosoft](https://docs.microsoft.com/en-us/onedrive/developer/rest-api/getting-started/msa-oauth?view=odsp-graph-online))
-`uploader({provider: "onedrive", path: ""})` 
-- uploader : 미들웨어
-- provider : "update할 Cloud 서비스" 
-
 
 ## Credits
 * aws-sdk ([Github](https://github.com/aws/aws-sdk-js) / [NPM](https://www.npmjs.com/package/aws-sdk))
@@ -66,5 +53,7 @@ module.exports=api;
 
 * s3-sdk-nodejs ([Opentutorials](https://opentutorials.org/course/2717/11797))
     * How to use s3-sdk for Nodejs
+
+
 ## License
-어떤 내용들어가야할까여
+Expres-Cloud-Uploader is released under Apache License V2.0. See [LICENSE](/LICENSE.md) for more information
