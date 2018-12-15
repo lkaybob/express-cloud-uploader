@@ -2,19 +2,19 @@
 
 ## NPM install
 ```console
-foo@bar:~$ npm express-cloud-uploader
+foo@bar:~$ npm install express-cloud-uploader
 ```
 ## What Is This?
-This package provides middleware for users who use the Cloud Web Service Manager to easily manage their files for users who use AWs, Google Drives, and OneDrive. If a user wants to upload any Content File to the user's Cloud Service, they can upload it at once by formatting it with a Json file and reducing the effort to upload it directly.
+This package provides middleware for users who use the Cloud Web Service Manager to easily manage their files for users who use AWs, Google Drives, and OneDrive. If a user wants to upload any Content File to the user's Cloud Service, they can upload it at once by formatting it with a Json file and reducing the effort to upload it directly. Our project is middleware for the Express.js module.
 
 ## How To Use It
 ### Usage By Service
 #### Google Drive
 ![googledrive](/images/googledrivelogo.gif)
-* [Google Drive usingway](/docs/google-drive.md)
+* [Google Drive See Docs](/docs/google-drive.md)
 #### One Drive
 ![onedrive](/images/onedrive.jpg)
-* [OneDrive usingway]()
+* [OneDrive See Docs](/docs/onedrive.md)
 #### AWS S3
 ![AWS](/images/awslogo.gif)
 * [AWS S3 usingway](/docs/s3.md)
@@ -26,10 +26,10 @@ This package provides middleware for users who use the Cloud Web Service Manager
   <input type="Upload wanting file type" name="just name" value="some text">
 </form>
 ```
-The pagkage's supporting upload file type is multipart/form-data. You may do the rest as you wish.
+Suppose you have a webpage like this, which uploads file to the server.
 
 #### In The Backend
-For example)
+The pagkage's supporting upload file type is multipart/form-data. You may do the rest as you wish.<br>
 ```js
 let api = require("express").Router();
 api.post("/", uploader({provider: "onedrive", path: ""}), (req, res) => {
@@ -66,3 +66,5 @@ module.exports=api;
 
 * s3-sdk-nodejs ([Opentutorials](https://opentutorials.org/course/2717/11797))
     * How to use s3-sdk for Nodejs
+## License
+어떤 내용들어가야할까여
