@@ -18,7 +18,7 @@ This package provides middleware for users who use the Cloud Web Service Manager
 #### One Drive
 
 ![onedrive](/images/onedrive.jpg)
-* [OneDrive See Docs](/docs/onedrive-Ko.md)
+* [OneDrive See Docs](/docs/onedrive-en.md)
 
 #### AWS S3
 

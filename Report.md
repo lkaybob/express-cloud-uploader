@@ -8,13 +8,19 @@
 이태경 (소프트웨어학과 17) | 문서화 및 Google Drive 연동
 
 ## 순서
+- [NPMinstall](#NPM-install)
 - [개발동기](#개발-동기)
 - [개발과정](#개발-과정)
 - [개선사항](#기존-오픈소스-프로젝트에-비하여-개선된-사항)
 - [기대효과](#기대효과)
 - [사용방법](#사용방법)
+- [유사프로젝트](#유사프로젝트)
 - [사용오픈소스목록](#사용되는-오픈소스-SW-목록)
-- [Future To-Do List](#Future-To-Do-List)
+
+## NPM install
+```console
+foo@bar:~$ npm install express-cloud-uploader
+```
 
 ## 개발 동기
 타 프로젝트를 진행하면서 node에서 코드 작성 시 로컬의 multipart 파일을 AWS에서 제공하는 S3 스토리지에 한번에 저장할 수 있는 모듈이 있으면 편리하겠다는 생각이 들었다.
@@ -39,10 +45,10 @@
 * [Google Drive 사용방법](/docs/google-drive.md)
 
 ![onedrive](/images/onedrive.jpg)
-* [OneDrive 사용방법]()
+* [OneDrive 사용방법](/docs/onedrive-ko.md)
 
 ![AWS](/images/awslogo.gif)
-* [AWS S3 사용법](/docs/s3.md)
+* [AWS S3 사용방법](/docs/s3.md)
 
 
 ### 미들웨어 사용법
@@ -53,19 +59,10 @@ api.post("/", uploader({provider: "onedrive", path: ""}), (req, res) => {
 });
 module.exports=api;
 ```
-#### S3
-`uploader({provider: "aws-s3", bucket: ""})` 
-- provider : "aws-s3" 
-- bucket: 사용자의 bucket 이름
-#### GoogleDrive
-* Get OAuth2 Key([developergoogle])(https://developers.google.com/identity/protocols/OAuth2)
+각 Cloud Service별로 Oauth2 키값 사용방법이나, 적절한 사용방법에 대해 적혀있다.
 
-#### OneDrive
-* Get OAuth2 Key([docsMicrosoft](https://docs.microsoft.com/en-us/onedrive/developer/rest-api/getting-started/msa-oauth?view=odsp-graph-online))
-`uploader({provider: "onedrive", path: ""})` 
-- uploader : 미들웨어
-- provider : "update할 Cloud 서비스" 
-
+## 유사 프로젝트
+* express-form-post([express-form-post](https://www.npmjs.com/package/express-form-post))
 
 ## 사용되는 오픈소스 SW 목록
 * aws-sdk ([Github](https://github.com/aws/aws-sdk-js) / [NPM](https://www.npmjs.com/package/aws-sdk))
@@ -81,7 +78,7 @@ module.exports=api;
 * s3-sdk-nodejs ([생활코딩](https://opentutorials.org/course/2717/11797))
     * Nodejs를 위한 s3-sdk 사용법
 
-## Future To-Do List
-* [ ] aws-sdk, OneDrive REST API, Google Drive SDK를 S3연동 미들웨어 구축
-* [ ] NPM Registry 등록
-* [ ] Documentation 작성
+### LICENSE
+* Msgraph-client : MIT License
+* formidable : MIT License
+* aws-sdk : Apache 2.0 ([LICENSE](/license.md))
